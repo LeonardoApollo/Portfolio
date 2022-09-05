@@ -45,7 +45,7 @@ const path = {
     src: {
         base: 'src/',
         html: 'src/*html',
-        scss: 'src/scss/**/*.scss',
+        scss: 'src/sass/**/*.scss',
         js: 'src/js/index.js',
         img: 'src/img/**/*.{jpg,svg,jpeg,png,gif}',
         imgF: 'src/img/**/*.{jpg,jpeg,png}',
@@ -60,7 +60,7 @@ const path = {
     },
     watch: {
         html: 'src/*html',
-        scss: 'src/scss/**/*.scss',
+        scss: 'src/sass/**/*.scss',
         js: 'src/js/**/*.*',
         img: 'src/img/**/*.{jpg,svg,jpeg,png,gif}',
         imgF: 'src/img/**/*.{jpg,jpeg,png}',
@@ -226,7 +226,7 @@ const develop = (ready) => {
     ready();
 };
 
-export const base = gulp.parallel(html, scss, js, image, avif, webp, copy,);
+export const base = gulp.parallel(html, scss, js, image, avif, webp, copy);
 
 export const build = gulp.series(clear, base);
 

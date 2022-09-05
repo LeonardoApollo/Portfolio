@@ -1,7 +1,7 @@
 {
   "name": "myconfig",
   "version": "1.0.0",
-  "description": "",
+  "description": "Frontend 2022",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -9,7 +9,7 @@
     "start": "gulp",
     "clear": "gulp clear"
   },
-  "author": "",
+  "author": "Mikhail Tyapkov",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.18.13",
