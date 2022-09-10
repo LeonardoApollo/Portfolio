@@ -9,6 +9,7 @@
         margin-top: 10px;
     }
     &__subtitle {
+        margin-right: 150px;
         @include before_circle;
         position: relative;
         z-index: 2;

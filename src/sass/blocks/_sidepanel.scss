@@ -1,5 +1,5 @@
 .sidepanel {
-    position: absolute;
+    position: fixed;
     top: 230px;
     left: 50px;
     display: flex;
@@ -10,17 +10,17 @@
     z-index: 3;
     a {
         img {
-            background-color: #fff;
+            background-color: $main-color;
             border-radius: 100%;
         }
     }
     &__divider {
         width: 2px;
         height: 70px;
-        background-color: #fff;
+        background-color: $main-color;
     }
     &__text {
-        color: #fff;
+        color: $main-color;
         width: 25px;
         height: 150px;
         span {
