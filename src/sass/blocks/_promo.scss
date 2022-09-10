@@ -9,10 +9,23 @@
         margin-top: 10px;
     }
     &__subtitle {
+        color: #fff;
+        display: flex;
+        justify-content: flex-end;
         margin-right: 150px;
-        @include before_circle;
         position: relative;
         z-index: 2;
+        &:before {
+            content: '';
+            width: 36px;
+            height: 36px;
+            background: $main-color;
+            position: absolute;
+            border-radius: 100%;
+            z-index: -1;
+            top: -25%;
+            right: 197px;
+        }
     }
     &__btns {
         margin-top: 25px;

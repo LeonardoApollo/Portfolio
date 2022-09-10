@@ -7,14 +7,14 @@
         line-height: 21px;
     }
     &_fz16 {
-        display: flex;
-        justify-content: flex-end;
-        color: #fff;
         font-size: 16px;
         line-height: 24px;
     }
     &_fz48 {
         color: #f3f3f3;
         font-size: 48px;
+    }
+    &_fz36 {
+        font-size: 36px;
     }
 }
