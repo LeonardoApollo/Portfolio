@@ -165,11 +165,11 @@
                                     <div class="resume__item-icon">
                                         <img src="img/icons/experience/courses.svg" alt="Курсы">
                                     </div>
-                                    <h4 class="title title_fz14">BeonMax</h4>
-                                    <div class="resume__item-location">Курсы по web-разработке</div>
+                                    <h4 class="title title_fz14">Самоучка</h4>
+                                    <div class="resume__item-location">Собственная картотека</div>
                                 </div>
                                 <div class="resume__item-body">
-                                    Проходил платные курсы по web-разработке, Java-Script, Wordpress, PHP и MySQL на платформе BeonMax, что в сумме дало больше 100 часов обучающего контента!
+                                    Обучение программированию не может быть основанно только на курсах или уроками в колледже. Настоящий программист всегда развивается и осваивает новые знания. И чтобы их упорядочить я создал свою собственную картотеку.
                                 </div>
                             </div>
                         </li>
@@ -184,27 +184,15 @@
                                     <div class="resume__item-icon">
                                         <img src="img/icons/experience/developer.svg" alt="Курсы">
                                     </div>
-                                    <h4 class="title title_fz14">BeonMax</h4>
-                                    <div class="resume__item-location">Курсы по web-разработке</div>
+                                    <h4 class="title title_fz14">Будьте первыми!</h4>
+                                    <div class="resume__item-location">"Теория без практики мертва, практика без теории слепа"</div>
                                 </div>
                                 <div class="resume__item-body">
-                                    Проходил платные курсы по web-разработке, Java-Script, Wordpress, PHP и MySQL на платформе BeonMax, что в сумме дало больше 100 часов обучающего контента!
+                                    Я с нетерпением ожидаю возможность получить первый опыт реальных проектов. Ведь только через их можно получить настоящий вкус жизни программиста.
                                 </div>
                             </div>
                         </li>
                         <li>
-                            <div class="resume__item">
-                                <div class="resume__item-head">
-                                    <div class="resume__item-icon">
-                                        <img src="img/icons/experience/designer.svg" alt="Курсы">
-                                    </div>
-                                    <h4 class="title title_fz14">BeonMax</h4>
-                                    <div class="resume__item-location">Курсы по web-разработке</div>
-                                </div>
-                                <div class="resume__item-body">
-                                    Проходил платные курсы по web-разработке, Java-Script, Wordpress, PHP и MySQL на платформе BeonMax, что в сумме дало больше 100 часов обучающего контента!
-                                </div>
-                            </div>
                         </li>
                     </ul>
                 </div>
@@ -290,6 +278,31 @@
                         Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит
                     </div>
                 </div>
+
+                <div class="skills__block">
+                    <div class="skills__block-head">
+                        <div div class="skills__block-icon">
+                            <img src="img/icons/skills/php.svg" alt="PHP">
+                            <h4 class="title title_fz14 skills__block-title">PHP</h4>
+                        </div>
+                    </div>
+                    <div class="skills__block-text">
+                        Это язык программиования общего назначения, специально сконструированный для вэб-разработок с возожностью его внедрения непосредственно в HTML
+                    </div>
+                </div>
+
+                <div class="skills__block">
+                    <div class="skills__block-head">
+                        <div div class="skills__block-icon">
+                            <img src="img/icons/skills/icons8-mysql-logo-144.svg" alt="MySQL">
+                            <h4 class="title title_fz14 skills__block-title">MySQL</h4>
+                        </div>
+                    </div>
+                    <div class="skills__block-text">
+                        Этот самая распространенная система управения базами данных. С помощью нее можно лего структурировать данные сервера, а также использовать для хранения данных поступающих на сервер
+                    </div>
+                </div>
+
             </div>
 
             <div class="skills__ratings">
@@ -448,15 +461,15 @@
                         Или оставьте ваши данные и сам вам напишу:
                     </div>
 
-                    <form action="#" class="contacts__form">
+                    <form id="form" action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input name="name" id="name" type="text">
-                            <label for="name">Ваше имя</label>
+                            <input name="name" placeholder="Минимум три символа" required id="name" type="text">
+                            <label for="name">Ваше имя*</label>
                         </div>
 
                         <div class="contacts__input">
-                            <input name="email" id="email" type="email">
-                            <label for="email">Ваша почта</label>
+                            <input name="email" required placeholder="example@gmail.com" id="email" type="email">
+                            <label for="email">Ваша почта*</label>
                         </div>
 
                         <div class="contacts__textarea">
@@ -464,13 +477,15 @@
                             <label for="text">Ваше сообщение</label>
                         </div>
                         <div>
-                            <button class=" contacts__btn btn">Отправить сообщение</button>
+                            <button class="contacts__btn btn" type="submit">Отправить сообщение</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
