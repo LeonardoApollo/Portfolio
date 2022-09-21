@@ -35,6 +35,25 @@ $(document).ready(function () {
       }
     }
   });
+  const form = document.getElementById('form');
+  form.addEventListener('submit', formSend);
+
+  async function formSend(e) {
+    e.preventDefault();
+    let formData = new FormData(form);
+    let responce = await fetch('smart.php', {
+      method: 'POST',
+      body: formData
+    });
+
+    if (responce.ok) {
+      let result = await responce.json();
+      alert(result.message);
+      $("form").trigger("reset");
+    } else {
+      alert("Ошибка отправки формы");
+    }
+  }
 });
 /******/ })()
 ;
