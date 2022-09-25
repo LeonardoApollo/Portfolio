@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 	$('form').validate({
 		rules: {
-		name: {
+            name: {
             required: true,
             minlength: 3
             },
@@ -38,24 +38,19 @@ $(document).ready(function(){
 		}
 	});
 
-    const form = document.getElementById('form');
-    form.addEventListener('submit', formSend);
-
-    async function formSend(e) {
+    $('form').submit(function(e) {
         e.preventDefault();
+        
+        if (!$(this).valid()) {
+			return;
+		}
 
-        let formData = new FormData(form);
+		$.ajax({
+			type: "POST",
+			url: "smart.php",
+			data: $(this).serialize()
+		})
 
-        let responce = await fetch('smart.php', {
-            method: 'POST',
-            body: formData
-        });
-        if (responce.ok){
-            let result = await responce.json();
-            alert(result.message);
-            $("form").trigger("reset");
-        }else{
-            alert("Ошибка отправки формы");
-        }
-    }
+        form.reset();
+    });
 });
