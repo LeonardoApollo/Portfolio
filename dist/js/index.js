@@ -25,6 +25,9 @@ $(document).ready(function () {
       email: {
         required: true,
         email: true
+      },
+      chekbox: {
+        required: true
       }
     },
     messages: {
@@ -32,7 +35,8 @@ $(document).ready(function () {
       email: {
         required: "Введите свою почту",
         email: "Неверный адрес почты"
-      }
+      },
+      checkbox: 'Подтвердите обработку персональных данных'
     }
   });
   $('form').submit(function (e) {

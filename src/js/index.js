@@ -21,20 +21,24 @@ $(document).ready(function(){
 	$('form').validate({
 		rules: {
             name: {
-            required: true,
-            minlength: 3
+                required: true,
+                minlength: 3
             },
-		email: {
-			required: true,
-			email: true
-				}
-			},
+            email: {
+				required: true,
+				email: true
+				},
+			chekbox: {
+				required: true,
+			}
+		},
 		messages: {
 			name: "Неверное имя",
 			email: {
 				required: "Введите свою почту",
 				email: "Неверный адрес почты"
-			}
+			},
+			checkbox: 'Подтвердите обработку персональных данных',
 		}
 	});
 

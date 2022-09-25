@@ -463,12 +463,12 @@
 
                     <form method="POST" id="form" action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input name="name" placeholder="Минимум три символа" required id="name" type="text">
+                            <input required  name="name" placeholder="Минимум три символа" id="name" type="text">
                             <label for="name">Ваше имя*</label>
                         </div>
 
                         <div class="contacts__input">
-                            <input name="email" required placeholder="example@gmail.com" id="email" type="email">
+                            <input required  name="email" placeholder="example@gmail.com" id="email" type="email">
                             <label for="email">Ваша почта*</label>
                         </div>
 
@@ -476,8 +476,12 @@
                             <textarea name="text" id="text"></textarea>
                             <label for="text">Ваше сообщение</label>
                         </div>
-                        <div>
+                        <div class="contacts__triggers">
                             <button class="contacts__btn btn" type="submit">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required name="checkbox" type="checkbox">
+                                <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                            </div>
                         </div>
                     </form>
                 </div>

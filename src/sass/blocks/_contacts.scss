@@ -9,6 +9,8 @@
     &__photo {
         img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
     &__descr {
@@ -58,8 +60,23 @@
         position: absolute;
         left: 120px;
         border: 1px solid red;
-		text-align: center;
 		margin-bottom: 15px;
+        }
+    }
+    &__triggers {
+        grid-column: 1 / 3;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 35px;
+    }
+    &__policy {
+        position: relative;
+        font-size: 12px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        input {
+            margin-right: 10px;
         }
     }
     &__input {
@@ -88,4 +105,12 @@
         font-size: 14px;
         line-height: 24px;
     }
+}
+#checkbox-error {
+    top: 35px;
+    left: -8px;
+    margin-bottom: 0px;
+    border: none;
+    color: red;
+    box-shadow: none;
 }

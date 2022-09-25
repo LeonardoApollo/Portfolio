@@ -1,7 +1,7 @@
 .promo {
     min-height: 800px;
     position: relative;
-    background: url('../img/bgg.jpg') no-repeat 50%/cover;
+    background: url('../img/bgg.jpg') center (center/cover) no-repeat;
     padding-top: 205px;
     &__title {
         display: flex;
