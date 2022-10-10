@@ -9,6 +9,9 @@
         row-gap: 30px;
     }
     &__photo {
+        &-540 {
+            display: none;
+        }
         grid-row: 1/3;
         img {
             width: 100%;
