@@ -11,6 +11,21 @@ $(document).ready(function(){
     menu.classList.remove('active');
     });
 
+    const price = document.querySelector('.price__currentprice'),
+    closePrice = document.querySelector('.price__close');
+
+    closePrice.addEventListener('click', () => {
+        price.classList.add('disable');
+    });
+
+    let $page = $('html, body');
+    $('a[href*="#"]').click(function() {
+        $page.animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+        return false;
+    });
+
     const counters = document.querySelectorAll('.skills__ratings-counter'),
         lines = document.querySelectorAll('.skills__ratings-line span');
 
