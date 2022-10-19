@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    window.alert('Мой сайт патфолио выполнен с расчетом моего дальнейшего развития и будет изменять с течением времени');
+
     const hamburger = document.querySelector('.hamburger'),
     menu = document.querySelector('.menu'),
     closeElem = document.querySelector('.menu__close');
